@@ -49,19 +49,11 @@
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     white-space: wrap;
   }
-}
 
-@media (max-width: 740px) {
-  .navbar-list {
-    top: 130px;
-  }
-  .cart {
-    top: 130px;
-  }
-  .overlay {
-    top: 131px !important;
+  .title-productos h2 {
+    font-size: 2rem;
   }
 }

@@ -1,20 +1,10 @@
-/* :root {
-  --text-primary: #342016;
-  --text-secondary: #956039;
-  --button: #cca46b;
-  --shadow: #eee3cd;
-  --background: #f5efdf;
-  --background2: #dbc296;
-  --font-family: "Quicksand", sans-serif;
-} */
-
 :root {
-  --text-primary: #4c2a36; /* ciruela suave */
-  --text-secondary: #b75d69; /* rosa antiguo */
-  --button: #e9a6b2; /* rosa pastel */
-  --shadow: #fce4ec; /* rosado muy claro (sombra o fondo) */
-  --background: #fff5f7; /* fondo suave, cálido y claro */
-  --background2: #f8c3d2; /* fondo secundario más rosa */
+  --text-primary: #4c2a36;
+  --text-secondary: #b75d69;
+  --button: #e9a6b2;
+  --shadow: #fce4ec;
+  --background: #fff5f7;
+  --background2: #f8c3d2;
   --font-family: "Quicksand", sans-serif;
 }
 
@@ -47,6 +37,7 @@ header {
 .logo {
   width: 60px;
   height: 60px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -83,7 +74,7 @@ header {
 }
 
 nav a {
-  color: var(--text-primary); /* o el color que tengas */
+  color: var(--text-primary);
   text-decoration: none;
   margin: 0 10px;
   padding: 8px 16px;
@@ -92,8 +83,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: var(--button); /* o var(--text-secondary) */
-  color: var(--background); /* que contraste bien */
+  background-color: var(--button);
+  color: var(--background);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateY(-2px);
 }
@@ -286,7 +277,13 @@ main {
 .hero-title {
   font-size: 5rem;
   white-space: nowrap;
-  color: palevioletred;
+  background: linear-gradient(
+    to right,
+    var(--text-secondary),
+    var(--text-primary)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container-img {
@@ -307,6 +304,39 @@ main {
   display: flex;
   font-size: 20px;
   font-style: italic;
+}
+
+.title-productos {
+  color: var(--text-secondary);
+  font-size: 32px;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  position: relative;
+  animation: aparecerSuave 1s ease-in-out forwards,
+    resplandor 6s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes aparecerSuave {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes resplandor {
+  0%,
+  100% {
+    text-shadow: 0 0 0px rgba(255, 105, 180, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(255, 105, 180, 0.9);
+  }
 }
 
 .product-section {
@@ -394,7 +424,7 @@ main {
 
 .formulario-contacto {
   padding: 40px 20px;
-  background-color: #fff0f5; /* rosita suave o el que estés usando */
+  background-color: #fff0f5;
   text-align: center;
 }
 
@@ -520,29 +550,31 @@ main {
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   background: linear-gradient(
-    90deg,
+    270deg,
     #ff9ec9,
     #fddde6,
     #ffffff,
-    #ff9ec9,
-    #fddde6
+    #fddde6,
+    #ff9ec9
   );
-  background-size: 400%;
+  background-size: 800% 800%;
   border-radius: 12px;
   z-index: -1;
-  animation: recorrerBorde 10s linear infinite;
+  animation: recorrerBorde 15s ease-in-out infinite;
 }
 
 @keyframes recorrerBorde {
   0% {
     background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
   100% {
-    background-position: 400% 50%;
+    background-position: 0% 50%;
   }
 }
 
-/* Página de Login */
 .login-body {
   background: #fffafc;
   font-family: "Poppins", sans-serif;
@@ -557,7 +589,7 @@ main {
 .login-title {
   font-size: 1.8rem;
   text-align: center;
-  color: #ff6b81;
+  color: var(--text-secondary);
   margin-bottom: 0.5rem;
   max-width: 500px;
 }
@@ -615,7 +647,7 @@ main {
   top: 20px;
   left: 20px;
   z-index: 1000;
-  background-color: #fce4ec; /* rosa clarito */
+  background-color: var(--background2);
   padding: 10px;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -629,7 +661,7 @@ main {
 }
 
 .btn-volver:hover {
-  background-color: #f06292; /* rosa más intenso */
+  background-color: #f06292;
   transform: scale(1.1) rotate(-8deg);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }

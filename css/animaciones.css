@@ -27,7 +27,7 @@
 .sticky-promo span {
   display: inline-block;
   padding-left: 100%;
-  animation: promo-scroll 15s linear infinite;
+  animation: promo-scroll 20s linear infinite;
 }
 
 @keyframes promo-scroll {

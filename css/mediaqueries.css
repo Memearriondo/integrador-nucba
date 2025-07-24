@@ -33,6 +33,14 @@
     cursor: pointer;
   }
 
+  .cart {
+    width: 380px;
+  }
+
+  .cart-item {
+    flex-wrap: wrap;
+  }
+
   .cart-icon {
     height: 35px;
     width: 35px;
@@ -54,6 +62,10 @@
   }
 
   .title-productos h2 {
+    font-size: 2rem;
+  }
+
+  .combos-title {
     font-size: 2rem;
   }
 }

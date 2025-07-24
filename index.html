@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mimemos a mamá</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
+    <link rel="stylesheet" href="./css/animaciones.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sticky-promo">
+      <span
+        >🎁 ¡Promo especial por el Día de la Madre! Caja de regalo + taller
+        gratuito + 15% off por transferencia 💕</span
+      >
+    </div>
+
+    <header>
+      <img class="logo" src="./img/logo.jpg" alt="" />
+      <nav class="navbar">
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/menu.png" alt="" class="menu-icon" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+
+        <ul class="navbar-list">
+          <li><a href="#combos">Combos</a></li>
+          <li class="navbar-item">
+            <a href="./pages/login.html" class="navbar-link">Registrarse</a>
+          </li>
+          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <ul class="navbar-iniciar">
+          <li class="sesion-item"><a href="./pages/iniciar.html" class="sesion-link">Iniciar sesion</a></li>
+          
+        </ul>
+
+
+
+        <label for="cart-toggle">
+          <!-- <img class="cart-icon" src="./img/carrito.png" alt="cart-icon" /> -->
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+
+        <div class="cart">
+          <h2>Tus productos (3)</h2>
+          <article class="cart-item-container">
+            <article class="cart-item">
+              <img
+                class="producto1"
+                src="./img/almohadon.jpg"
+                alt="almohadon"
+              />
+              <div class="item-info">
+                <h3 class="item-title">Almohadón de lactancia</h3>
+                <p class="item-description">Funda lavable</p>
+                <span class="item-price">$19.900</span>
+              </div>
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <img class="producto2" src="./img/kit.jpg" alt="kit" />
+              <div class="item-info">
+                <h3 class="item-title">Kit posparto</h3>
+                <p class="item-description">Con aceite neutro de regalo</p>
+                <span class="item-price">$8.900</span>
+              </div>
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <img class="producto3" src="./img/neceser.jpg" alt="neceser" />
+              <div class="item-info">
+                <h3 class="item-title">Neceser multiuso</h3>
+                <p class="item-description">Amplio, con tela antimancha</p>
+                <span class="item-price">$7.000</span>
+              </div>
+              <div class="item-handler">
+                <button class="quantity-handler down">-</button>
+                <span class="item-quantity">1</span>
+                <button class="quantity-handler up">+</button>
+              </div>
+            </article>
+          </article>
+          <hr class="divider" />
+          <div class="cart-total">
+            <p>Total</p>
+            <span>$35.800</span>
+          </div>
+          <button class="btn">Comprar</button>
+          <p class="descuento">
+            El descuento adicional del 15% por tranferencia se aplica cuando
+            elegis la forma de pago
+          </p>
+        </div>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Mimemos a mamá</h1>
+          <p class="hero-description">
+            "Regalos pensados para acompañar la maternidad con ternura,
+            información y comodidad"
+          </p>
+        </div>
+      </section>
+
+      <section class="product-section">
+        <div class="product-card">
+          <img src="./img/album.jpg" alt="album" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Álbum "Mis primeras veces"</h3>
+            <p class="product-description">
+              Un espacio para atesorar recuerdos únicos. Incluye secciones para
+              anotar logros, curiosidades y momentos inolvidables del bebé, con
+              lugar para fotos familiares que quedarán guardadas para siempre.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/almohadon.jpg" alt="almohadon" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Almohadon de lactancia</h3>
+            <p class="product-description">
+              Diseñado para acompañar la lactancia con comodidad, este almohadón
+              hipoalergénico se adapta al cuerpo y al momento. Disponible en
+              color a elección, su relleno firme y suave brinda el soporte ideal
+              tanto para mamá como para bebé.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/corp.jpg" alt="corp" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Corpiño de lactancia</h3>
+            <p class="product-description">
+              Funcional y delicado. Este corpiño de lactancia está pensado para
+              facilitar la teta sin resignar confort ni suavidad. Se adapta al
+              cuerpo cambiante y permite un acceso rápido para amamantar con
+              calma y confianza.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/gift-card.jpg" alt="Gift Card" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Gift Card</h3>
+            <p class="product-description">
+              "Incluye una consulta con una puericultora (hasta 2 hs) sobre
+              lactancia, alimentación, etc. Con seguimiento si se requiere."
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/kit.jpg" alt="kit" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Kit de posparto</h3>
+            <p class="product-description">
+              Un regalo real para un cuerpo real. Incluye apósitos suaves,
+              bolsita térmica de semillas, snack saludable, bolsita de golosinas
+              y una guía en PDF con info amorosa para los primeros días de
+              lactancia. Todo en una bolsita de tela lista para abrazar tu nuevo
+              comienzo.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/libro2.jpg" alt="libro2" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">
+              Libro "Un viaje hacia el encuentro" (PDF)
+            </h3>
+            <p class="product-description">
+              Una guía sensible y con base científica que acompaña desde el
+              embarazo hasta la crianza. Relatos, información y contención en
+              cada página para transitar este viaje con conciencia, cuerpo y
+              corazón.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/remera.jpg" alt="remera" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Remera para amamantar</h3>
+            <p class="product-description">
+              Una prenda práctica y amorosa. Con aberturas discretas para
+              amamantar sin incomodidades, esta remera de lactancia te permite
+              moverte libremente, dar la teta donde quieras y sentirte linda en
+              cualquier etapa.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/fular.jpg" alt="fular" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Fular de algodón</h3>
+            <p class="product-description">
+              Ideal desde el nacimiento. Confeccionado en algodón 100% natural,
+              permite llevar al bebé pegado a tu cuerpo de forma segura y
+              ergonómica. Promueve el contacto piel con piel, el vínculo y la
+              regulación emocional. Viene con guía de uso paso a paso.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="./img/Mochila maternal.jpg"
+            alt="mochila"
+            class="product-img"
+          />
+          <div class="product-info">
+            <h3 class="title-card">Mochila maternal Funcional</h3>
+            <p class="product-description">
+              No es la clásica mochila incómoda. Esta tiene bolsillos térmicos,
+              compartimentos separados y un diseño pensado para que todo esté
+              organizado y a mano. Liviana, resistente y con estilo. Porque ser
+              mamá no tiene por qué ser sin onda ni sin espalda.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/neceser.jpg" alt="neceser" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Neceser multiuso</h3>
+            <p class="product-description">
+              Compacto, suave y práctico. Guardá pañales, cremas, gasas,
+              pezoneras o lo que necesites tener a mano en las salidas o en la
+              casa. Tela impermeable y cierre reforzado. Lo abrís y encontrás
+              todo en segundos, incluso con una mano.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/Carpeta.jpg" alt="Carpeta" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Carpeta para documentos del bebé</h3>
+            <p class="product-description">
+              Guardá carnet del pediatra, libreta de vacunas, estudios y toda la
+              info médica del bebé en un solo lugar. Con bolsillos internos y
+              cierre seguro, es práctica y hermosa. Porque la salud también
+              necesita organización.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/caja.jpg" alt="caja" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Caja de primeros recuerdos</h3>
+            <p class="product-description">
+              Para guardar esos tesoros que no tienen precio: la pulserita de la
+              clínica, el primer mechón de pelo, una ecografía, su primera
+              cartita. Una caja de madera o cartón rígido con cierre imantado,
+              pensada para durar y emocionar cada vez que la abras.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/vaso.jpg" alt="vaso" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Vaso térmico con pajita</h3>
+            <p class="product-description">
+              El mejor aliado durante la lactancia. Mantiene el agua fresca por
+              horas, tiene pajita para que puedas tomar acostada sin mover al
+              bebé y un diseño que entra perfecto en la mesa de luz. Ideal para
+              tener siempre al lado mientras das la teta (porque sí, ¡la
+              lactancia da sed!).
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/antifaz.jpg" alt="antifaz" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Antifaz suave para descansar mejor</h3>
+            <p class="product-description">
+              Ideal para esos momentos en los que necesitás una siesta
+              reparadora o simplemente desconectarte un ratito. Su textura suave
+              y delicada no molesta ni deja marcas, y su diseño anatómico
+              bloquea suavemente la luz, ayudándote a descansar aunque sea por
+              minutos. Perfecto para las siestas entre tomas o para cuando el
+              cansancio se acumula. Mimo simple, efecto poderoso.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./img/buzo.jpg" alt="buzo" class="product-img" />
+          <div class="product-info">
+            <h3 class="title-card">Buzo maternal cómodo y amplio</h3>
+            <p class="product-description">
+              Un abrigo pensado para vos. Este buzo de algodón suave y corte
+              holgado es perfecto para los días fríos del posparto. Te abraza
+              sin apretar, se adapta a tu cuerpo y te acompaña en la lactancia,
+              las siestas del bebé y los momentos de calma en casa.
+              Confeccionado con comodidad y contención en mente, para que vos
+              también te sientas cuidada.
+            </p>
+            <button class="add-button">Agregar</button>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="beneficios">
+        <h2>Beneficios</h2>
+        <p>
+          Cada uno de estos artículos está pensado por una profesional de la
+          salud: una puericultora que armó cada producto pensando en la
+          comodidad de la madre y en la experiencia de acompañarlas día a día.
+          Además, ella misma escribió el libro que está publicado:
+          <strong>"Un viaje hacia el encuentro"</strong>. <br /><br />
+          Es un libro que cuenta con información para cada paso del camino:
+          desde la búsqueda del embarazo, la lactancia, el maravilloso mundo del
+          recién nacido y todas sus curiosidades, la pareja siendo padres,
+          alimentación, crianza, y miles de temas que valen la pena leer.
+        </p>
+      </section>
+
+      <section id="combos" class="combos-section">
+        <h2 class="combos-title">💝 Combos pensados para vos</h2>
+        <div class="combos-container">
+          <!-- Combo 1 -->
+          <div class="combo-card">
+            <span class="sticker">🍼 Mamá Primeriza</span>
+            <h3>Mamá Primeriza</h3>
+            <ul>
+              <li>✔️ Kit de posparto</li>
+              <li>✔️ Carpeta para documentos</li>
+              <li>✔️ Almohadón de lactancia</li>
+            </ul>
+            <p class="combo-desc">
+              Ideal para arrancar con amor, organización y contención.
+            </p>
+            <span class="promo">15% OFF</span>
+          </div>
+
+          <!-- Combo 2 -->
+          <div class="combo-card">
+            <span class="sticker">🌸 ¡Nuevo!</span>
+            <h3>Todo empieza aquí</h3>
+            <ul>
+              <li>✔️ Fular de algodón</li>
+              <li>✔️ Remera para amamantar</li>
+              <li>✔️ Caja de recuerdos</li>
+            </ul>
+            <p class="combo-desc">
+              Un abrazo físico y emocional para el inicio del vínculo.
+            </p>
+            <span class="promo">10% OFF + Regalo</span>
+          </div>
+
+          <!-- Combo 3 -->
+          <div class="combo-card">
+            <span class="sticker">🔥 Más vendido</span>
+            <h3>Nuestros infaltables</h3>
+            <ul>
+              <li>✔️ Vaso térmico con pajita</li>
+              <li>✔️ Corpiño de lactancia</li>
+              <li>✔️ Antifaz para descansar</li>
+            </ul>
+            <p class="combo-desc">
+              Cuidate mientras cuidás. Elegido por todas.
+            </p>
+            <span class="promo">20% OFF</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre-nosotros" class="sobre-nosotros">
+        <div class="contenedor-sn">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            En <strong>Mimemos a Mamá</strong> creemos que la maternidad, el
+            nacimiento y la crianza merecen un acompañamiento cálido, humano y
+            real.
+          </p>
+          <p>
+            Nacimos con la intención de crear un espacio donde cada madre, padre
+            o cuidador se sienta contenido, escuchado y orientado. Sabemos que
+            no hay recetas mágicas, pero sí hay información clara, respeto y
+            empatía.
+          </p>
+          <p>
+            Nuestro equipo está formado por personas apasionadas por el
+            bienestar familiar, la crianza respetuosa y el desarrollo saludable
+            de bebés y niños. Compartimos recursos, productos y experiencias
+            para acompañar cada etapa con amor y presencia.
+          </p>
+          <p>Gracias por confiar en nosotros. 💛</p>
+        </div>
+      </section>
+    </main>
+    <a
+      href="https://wa.me/5492475405535"
+      target="_blank"
+      class="btn-wpp"
+      aria-label="Enviar WhatsApp"
+    >
+      <img src="/img/whatsapp.png" alt="WhatsApp" />
+    </a>
+  </body>
+  <section id="contacto" class="formulario-contacto">
+    <h2>Escribinos</h2>
+    <form action="#" method="post">
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Tu nombre"
+        required
+      />
+
+      <label for="email">Correo electrónico</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="tucorreo@ejemplo.com"
+        required
+      />
+
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        placeholder="Escribí tu mensaje..."
+        required
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="Maps">
+    <div class="mapita">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.123456789!2d-60.7160000!3d-34.2000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c75e0000000000%3A0xabcdef123456789!2sRojas%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1699999999999"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-contenido">
+      <h3>Contacto</h3>
+      <ul>
+        <li>
+          <i class="fas fa-phone"></i> <a href="tel:2475405535">2475-405535</a>
+        </li>
+        <li>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:puericultoraydoulamel@gmail.com"
+            >puericultoraydoulamel@gmail.com</a
+          >
+        </li>
+        <li>
+          <i class="fab fa-instagram"></i>
+          <a href="https://www.instagram.com/pueriycrianza" target="_blank"
+            >@pueriycrianza</a
+          >
+        </li>
+      </ul>
+      <p class="footer-credito">Con amor 💗 Mimemos a Mamá</p>
+    </div>
+    <a href="#" class="btn-up" aria-label="Volver arriba">
+      <img src="/img/flecha.png" alt="Volver arriba" />
+    </a>
+  </footer>
+</html>

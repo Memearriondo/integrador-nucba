@@ -1,0 +1,67 @@
+@media (max-width: 992px) {
+  .navbar {
+    gap: 30px;
+  }
+
+  .navbar-list {
+    display: none;
+    background-color: #b75d69;
+    position: absolute;
+    top: 110px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    z-index: 100;
+    flex-direction: column;
+    padding: 25px 0 20px 20px;
+    gap: 30px;
+    border-radius: 0px 0px 15px 15px;
+    border: 2px solid#4c2a36;
+    border-top: none;
+  }
+
+  .navbar-list {
+    font-size: 1.2rem;
+    align-items: flex-start;
+  }
+
+  .menu-label {
+    display: flex;
+    width: 25px;
+    height: 20px;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  #menu-toggle:checked ~ .navbar-list {
+    background-color: #b75d69;
+    display: flex;
+  }
+
+  .hero-info {
+    background-color: blue;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    white-space: wrap;
+  }
+}
+
+@media (max-width: 740px) {
+  .navbar-list {
+    top: 130px;
+  }
+  .cart {
+    top: 130px;
+  }
+  .overlay {
+    top: 131px !important;
+  }
+}

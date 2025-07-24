@@ -1,0 +1,219 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 110px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: none;
+  z-index: 9;
+}
+
+.sticky-promo {
+  background-color: #fce4ec; /* color rosita suave */
+  color: #880e4f; /* bordó oscuro */
+  font-weight: bold;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.sticky-promo span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: promo-scroll 15s linear infinite;
+}
+
+@keyframes promo-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#cart-toggle:checked ~ .overlay {
+  display: block;
+}
+
+.cart {
+  transform: translateX(150%);
+  transition: all 0.5s;
+}
+
+.cart-icon:hover {
+  color: #4c2a36;
+}
+
+.add-button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #4c2a36, #b75d69, #e9a6b2);
+  border: 0;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.add-button:active,
+button:hover {
+  outline: 0;
+}
+
+.add-button span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.add-button:hover span {
+  background: none;
+}
+
+.ad-button:active {
+  transform: scale(0.9);
+}
+
+.add-button:hover {
+  background-size: 800%;
+  border-radius: 10px;
+  animation: glowing 20s linear infinite;
+}
+
+.gift-card-img {
+  width: 200%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.gift-card-img:hover {
+  transform: scale(1.03);
+}
+
+.combos-section {
+  background: linear-gradient(135deg, #fff5f7, #f8c3d2);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.combos-title {
+  font-size: 2.5rem;
+  color: #4c2a36;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.combos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.combo-card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(247, 190, 206, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fce4ec;
+}
+
+.combo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(183, 93, 105, 0.2);
+}
+
+.combo-card h3 {
+  font-size: 1.5rem;
+  color: #b75d69;
+  margin-bottom: 1rem;
+}
+
+.combo-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  color: #4c2a36;
+  text-align: left;
+}
+
+.combo-desc {
+  font-size: 1rem;
+  color: #4c2a36;
+  margin-bottom: 1.5rem;
+}
+
+.sticker {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  background-color: #e9a6b2;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.promo {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #b75d69;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

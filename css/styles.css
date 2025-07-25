@@ -127,7 +127,6 @@ nav a:hover {
   top: 110px;
   right: 0;
   width: 460px;
-  height: 100vh;
   background: linear-gradient(var(--text-secondary), var(--button));
   color: var(--text-primary);
   padding: 50px 30px;

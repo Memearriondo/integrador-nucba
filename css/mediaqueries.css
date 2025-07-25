@@ -7,7 +7,7 @@
     display: none;
     background-color: #b75d69;
     position: absolute;
-    top: 110px;
+    top: 70px;
     width: 90%;
     left: 5%;
     right: 5%;
@@ -67,13 +67,8 @@
 }
 
 @media (max-width: 680px) {
-  .navbar-list {
-    top: 112px;
-  }
-
   .cart {
     width: 380px;
-    top: 112px;
   }
 
   .cart-item {

@@ -33,6 +33,8 @@ header {
   align-items: center;
   height: 70px;
   color: var(--text-primary);
+  position: relative;
+  z-index: 500;
 }
 
 .logo {
@@ -124,7 +126,7 @@ nav a:hover {
 
 .cart {
   position: absolute;
-  top: 110px;
+  top: 70px;
   right: 0;
   width: 460px;
   background: linear-gradient(var(--text-secondary), var(--button));

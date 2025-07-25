@@ -34,11 +34,7 @@
   }
 
   .cart {
-    width: 380px;
-  }
-
-  .cart-item {
-    flex-wrap: wrap;
+    width: 420px;
   }
 
   .cart-icon {
@@ -67,5 +63,25 @@
 
   .combos-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 680px) {
+  .cart {
+    width: 380px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 12px;
+  }
+
+  .cart-item .item-info {
+    gap: 0.5rem;
+  }
+
+  .item-handler {
+    align-self: flex-end;
   }
 }

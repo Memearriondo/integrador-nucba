@@ -170,6 +170,16 @@ nav a:hover {
   padding: 20px;
 }
 
+.cart-item div {
+  display: flex;
+  gap: 1rem;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .cart-item img {
   height: 90px;
   width: 90px;
